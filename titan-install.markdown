@@ -100,8 +100,28 @@ Once completed Windows setup, login and complete driver installation, using:
 
 and install the RST utility (**SetupRST.zip**) from https://downloadcenter.intel.com/product/55005/Tecnologia-Intel-Rapid-Storage. If everything was setup correctly, in the utility it is possible to enable the performance option: _accelerate using solid state driveres:_ **Enable**. The acceleration will use **64GB** from the 256GB SSD on SATA0_GRAY channel. To actually see the interface reflect the settings **a reboot is mandatory**.
 
+_The residual space on the drive (186GB) can be formatted and partitioned on preference_
+
 After the reboot, the RST utility will reflect the acceleration state. Also, in the RAID setup, the acceleration menu will finally be enabled.
 
 ## Installing Ubuntu 16.04 LTS
 
-Now it is time to install the main operating system.
+Now it is time to install the main operating system. Again, remember to launch the installation from the **UEFI** partition of the installation media.
+
+Start installation and select manual partitioning for the system. Our partition configuration is:
+
+ * 512GB VNAND SSD:
+   - 1GB as BIOS boot reserved partition, not mounted
+   - ~370GB as ext4 with journal, mounted as `/`
+ * RAID_DEVICE_MAPPER
+   - 200GB as ext4 with journal, mounted as `/usr/local`
+   - 3.8TB as ext4 with journal, mounted as `/home`
+
+Device on which install bootloader is 512GB VNAND SSD.
+
+Complete the installation, and boot in your new operating system.
+
+## Notes
+
+ * _Note: if you try to inspect partitions with gparted, VNAND devices are supported from version 0.23. The one included in the Ubuntu installation media may be 0.19!_
+ * _The configuration made on RST utility is stored in hardware, thus available also under Linux_
