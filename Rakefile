@@ -8,7 +8,7 @@ rule ".7" => ".markdown" do |t|
 end
 
 task :copy => objects.ext(".7") do |t|
-  sh "cp #{t.source} /usr/local/share/man/man1/#{t.source}"
+  sh "cp #{t.source} /usr/local/share/man/man7/#{t.source}"
 end
 
 # Visible Tasks
