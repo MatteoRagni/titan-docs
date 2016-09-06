@@ -29,7 +29,7 @@ will compile all markdown and md files in manfiles.
 ```
 rake install
 ```
-will install manuals in `/usr/local/man/man7` and will trigger `mand` refreshing.
+will install manuals in `/usr/local/man/man7` and will trigger `mandb` refreshing.
 
 To visualize a compiled manfile without installing it:
 ```

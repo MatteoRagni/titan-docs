@@ -15,7 +15,7 @@ end
 
 desc "Install generated manfile in /usr/local/man directory"
 task :install => :copy do
-  sh "mand"
+  sh "mandb"
 end
 
 desc "Compile manfile from markdown. Check with: man -l FILE"
