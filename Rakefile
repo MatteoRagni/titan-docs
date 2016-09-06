@@ -2,7 +2,7 @@
 
 # Invisible Tasks
 
-objects = Rake::FileList.new "*.markdown", "*.md"
+objects = Rake::FileList.new "titan-*.markdown", "titan-*.md"
 rule ".7" => ".markdown" do |t|
   sh "pandoc -s -t man #{t.source} -o #{t.name}"
 end
