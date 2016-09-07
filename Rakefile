@@ -13,8 +13,13 @@ end
 
 # Visible Tasks
 
-desc "Install generated manfile in /usr/local/man directory"
-task :install => :copy do
+desc "Overwrite benner.net. Sudo required"
+task :banner do
+  sh "cp banner.net /usr/local/banner.net"
+end
+
+desc "Install generated manfile in /usr/local/man directory. Sudo required."
+task :install => [:copy, :banner] do
   sh "mandb"
 end
 

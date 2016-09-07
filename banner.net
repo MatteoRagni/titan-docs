@@ -1,14 +1,10 @@
-
-
-       ▄▄▄█████▓ ██▓▄▄▄█████▓ ▄▄▄       ███▄    █
-       ▓  ██▒ ▓▒▓██▒▓  ██▒ ▓▒▒████▄     ██ ▀█   █
-       ▒ ▓██░ ▒░▒██▒▒ ▓██░ ▒░▒██  ▀█▄  ▓██  ▀█ ██▒
-       ░ ▓██▓ ░ ░██░░ ▓██▓ ░ ░██▄▄▄▄██ ▓██▒  ▐▌██▒
-         ▒██▒ ░ ░██░  ▒██▒ ░  ▓█   ▓██▒▒██░   ▓██░
-         ▒ ░░   ░▓    ▒ ░░    ▒▒   ▓▒█░░ ▒░   ▒ ▒
-           ░     ▒ ░    ░      ▒   ▒▒ ░░ ░░   ░ ▒░
-         ░       ▒ ░  ░        ░   ▒      ░   ░ ░
-                 ░                 ░  ░         ░
+          __________________________________________________________________
+         _/\/\/\/\/\/\__/\/\/\/\__/\/\/\/\/\/\______/\/\______/\/\____/\/\_
+        _____/\/\________/\/\________/\/\________/\/\/\/\____/\/\/\__/\/\_ 
+       _____/\/\________/\/\________/\/\______/\/\____/\/\__/\/\/\/\/\/\_  
+      _____/\/\________/\/\________/\/\______/\/\/\/\/\/\__/\/\__/\/\/\_   
+     _____/\/\______/\/\/\/\______/\/\______/\/\____/\/\__/\/\____/\/\_    
+    __________________________________________________________________   
 
 
             Welcome on sci-titan.unitn.it
@@ -16,5 +12,11 @@
     Important manual pages
 
      * titan-install: how to install and configure the system from scratch
+     * titan-tensorflow: TBD
+     * titan-torch: TBD
+     * titan-mount-script: generate a script to configure sshfs
+     * titan-cuda: TBD
+     * titan-caffe: TBD
 
-    Official repo for documentation: https://github.com/MatteoRagni/titan-docs
+    Official repo for documentation: https://github.com/MatteoRagni/titan-documentation
+  
